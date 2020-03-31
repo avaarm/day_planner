@@ -1,5 +1,9 @@
 # 05-Day-Planner
 
+What it should look like:
+
+/Users/armenuhiavanesyan/uw-sea-fsf-pt-02-2020-u-c/class-content/05-Third-Party-APIs/02-Homework/Assets/05-third-party-apis-homework-demo.gif
+
 
 # 05 Third-Party APIs: Work Day Scheduler
 
@@ -35,7 +39,6 @@ THEN the saved events persist
 
 The following animation demonstrates the application functionality:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
 
 ## Review
 
