@@ -1,8 +1,8 @@
 # 05-Day-Planner
 
-What it should look like:
+The following animation demonstrates the application functionality:
 
-/Users/armenuhiavanesyan/uw-sea-fsf-pt-02-2020-u-c/class-content/05-Third-Party-APIs/02-Homework/Assets/05-third-party-apis-homework-demo.gif
+05-third-party-apis-homework-demo.gif
 
 
 # 05 Third-Party APIs: Work Day Scheduler
@@ -24,6 +24,7 @@ SO THAT I can manage my time effectively
 ```
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
+ - 
 THEN the current day is displayed at the top of the calendar
 WHEN I scroll down
 THEN I am presented with timeblocks for standard business hours
@@ -37,7 +38,6 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-The following animation demonstrates the application functionality:
 
 
 ## Review

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- link for save icon font awesome-->
+    <link 
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+  
+
+  <body>
+
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day. Type your tasks/ events at each block and make sure to save</p>
+      <p id="currentDay" class="lead"></p>
+
+      
+ 
+    </header>
+
+    <div class="container">
+      <!-- Timeblocks go here -->
+     <!--  Place one add-on or button on either side of an input. You may also place one on both sides of an input.-->
+
+     <div class="input-group" id="0900">
+          <span class="input-group-addon">9  AM  </span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="input-group" id="1000">
+          <span class="input-group-addon">10AM </span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="input-group" id="1100">
+          <span class="input-group-addon">11AM</span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="input-group" id="1200">
+          <span class="input-group-addon">12PM</span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="input-group" id="1300">
+          <span class="input-group-addon">1 PM </span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="input-group" id="1400">
+          <span class="input-group-addon">2 PM </span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="input-group" id="1500">
+          <span class="input-group-addon">3 PM </span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="input-group" id="1600">
+          <span class="input-group-addon">4 PM </span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+      <div class="input-group" id="1700">
+          <span class="input-group-addon">5 PM </span>
+          <input type="text" class="form-control" aria-label="Notes">
+          <button class="btn btn-default" type="button"><i class="fa fa-save"></i></button>
+      </div>
+     
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+   <!-- <script src="moment-min.js"></script> Links to moment.js within Assets-->
+    
+  </body>
+</html>
