@@ -18,6 +18,14 @@ jumbotronEl.appendChild(pEl);
 
 
 
+
+
+
+
+
+
+
+
 // Color change in the text that is linked to the current time to the different IDs
 // past, present, future ( code block is the {} brackets) (changed i++ to i = i+ 100)
 function colorGenerator () {
@@ -29,21 +37,24 @@ function colorGenerator () {
         // console.log(i);
         var timeBlock = document.getElementById(i);
         console.log(timeBlock);
+
+    
     }
 }
 colorGenerator();
 
 
+if ($("input-group").attr('id') = moment().format(HHOO))
+
+
+
+else if ($("input-group").attr('id') < moment().format(HHOO));
+
+
+else ($("input-group").attr('id') < moment().format(HHOO))
+
+
 // target them and compare the ID against the current time, create an If statement that says if is current time add this class 
-
-// saving text to local storage 
-
-
-// Pseudocode
-// if div/button/textbox is less than the currentTime then the div will be gray 
-// if div/button/textbox  is equal to currentTime then the text box will be red 
-// if div/button/textbox is greater than currentTime then the text box will be green
-
 
 
 
