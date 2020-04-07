@@ -17,8 +17,6 @@ pEl.innerText = (moment().format("dddd, MMMM Do YYYY"));
 jumbotronEl.appendChild(pEl);
 
 
-
-
 // Input Box color changes 
 
 
@@ -64,13 +62,6 @@ console.log("past: ", past, "future: ", future, "current hour = 3")
 past = getArrays(10)[0];
 future = getArrays(10)[1]
 console.log("past: ", past, "future: ", future, "current hour = 10")
-
-
-
-
-
-
-
 
 
 
