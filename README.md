@@ -34,6 +34,7 @@ SO THAT I can manage my time effectively
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
+```
              ```
                 // Displaying the time using moment.js 
                 var currentDayValue = moment().format("dddd, MMMM Do YYYY");
@@ -50,7 +51,7 @@ THEN the current day is displayed at the top of the calendar
                 // append to class jumbotron 
 
                 jumbotronEl.appendChild(pEl);
-
+            ```
              
 
 ```
@@ -58,6 +59,8 @@ WHEN I scroll down
 THEN I am presented with timeblocks for standard business hours
 WHEN I view the timeblocks for that day
 THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+```
+
             ```
                 var currentHour = moment().format('LT')[0];
 
@@ -101,10 +104,10 @@ THEN each timeblock is color coded to indicate whether it is in the past, presen
                 past = getArrays(10)[0];
                 future = getArrays(10)[1]
                 console.log("past: ", past, "future: ", future, "current hour = 10")
-
+            ```
             
 
-    notes: Spent over 10 hours on this section and this is the logic that makes sense to me. Now I need to connect it with my indvidual IDs. 
+notes: Spent over 10 hours on this section and this is the logic that makes sense to me. Now I need to connect it with my indvidual IDs. 
 
 ```
 WHEN I click into a timeblock
@@ -113,6 +116,7 @@ WHEN I click the save button for that timeblock
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
+```
             ```
                 $('.btn').on('click', function() {
                 
@@ -130,10 +134,11 @@ THEN the saved events persist
                         } 
                     });   
                 });
-            
+            ```
 
 
-    notes: Still working on this section. I'm able to see it in my log, but it doesn't work when I refresh
+    
+notes: Still working on this section. I'm able to see it in my log, but it doesn't work when I refresh
 
 
 
