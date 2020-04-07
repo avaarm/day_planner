@@ -51,7 +51,7 @@ THEN the current day is displayed at the top of the calendar
 
                 jumbotronEl.appendChild(pEl);
 
-             ```
+             
 
 
 WHEN I scroll down
@@ -102,7 +102,7 @@ THEN each timeblock is color coded to indicate whether it is in the past, presen
                 future = getArrays(10)[1]
                 console.log("past: ", past, "future: ", future, "current hour = 10")
 
-            ```
+            
 
     notes: Spent over 10 hours on this section and this is the logic that makes sense to me. Now I need to connect it with my indvidual IDs. 
 
@@ -130,7 +130,7 @@ THEN the saved events persist
                         } 
                     });   
                 });
-            ```
+            
 
 
     notes: Still working on this section. I'm able to see it in my log, but it doesn't work when I refresh
@@ -142,9 +142,7 @@ THEN the saved events persist
 
 You are required to submit the following for review:
 
-* The URL of the deployed application.
+* The URL of the deployed application - https://avaarm.github.io/05-Day-Planner/
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+* The URL of the GitHub repository - https://github.com/avaarm/05-Day-Planner
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
