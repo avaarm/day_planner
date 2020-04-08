@@ -117,23 +117,31 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
-            
+                            
+                $('#9').val(localStorage.getItem('9'));
+                $('#10').val(localStorage.getItem('10'));
+                $('#11').val(localStorage.getItem('11'));
+                $('#12').val(localStorage.getItem('12'));
+                $('#1').val(localStorage.getItem('1'));
+                $('#2').val(localStorage.getItem('2'));
+                $('#3').val(localStorage.getItem('3'));
+                $('#4').val(localStorage.getItem('4'));
+                $('#5').val(localStorage.getItem('5'));
+
+
+
                 $('.btn').on('click', function() {
                 
                     $('input[type="text"]').each(function(){ 
                         
-                        var className = $(this).attr('class');
-                        var value = $(this).val();
-                        if (localStorage){
-                            localStorage.setItem(className, value);
-                            console.log(className);  
-                            console.log(value);
-                        } else {
-                            $.cookies.set(className, value);
-                            return $.cookies.get(className);
-                        } 
+                        var className = $(this).attr('id');
+                        var value = $(this).val(); // using val() to get the value out of a user input
+                        console.log(className);  
+                        console.log(value); 
+                        localStorage.setItem(className, value);
                     });   
                 });
+
             
 
 
