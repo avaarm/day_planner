@@ -146,7 +146,7 @@ THEN the saved events persist
 
 
     
-notes: Still working on this section. I'm able to see it in my log, but it doesn't save when I refresh the page.
+notes:Took a long time and a help from a tutor to figure out how to connect local storage to the individual unique IDs.
 
 
 
