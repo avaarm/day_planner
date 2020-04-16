@@ -146,7 +146,7 @@ THEN the saved events persist
 
 
     
-notes: This took so long and I was able to figure out the localStorage portion because 
+notes:Took a long time and a help from a tutor to figure out how to connect local storage to the individual unique IDs.
 
 
 
