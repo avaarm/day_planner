@@ -146,7 +146,7 @@ THEN the saved events persist
 
 
     
-notes: Still working on this section. I'm able to see it in my log, but it doesn't save when I refresh the page.
+notes: This took so long and I was able to figure out the localStorage portion because 
 
 
 

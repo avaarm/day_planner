@@ -19,49 +19,74 @@ jumbotronEl.appendChild(pEl);
 
 // Input Box color changes 
 
+var currentTime = moment().format('LT');
+var currentHour = currentTime.split(":")[0];
 
-var currentHour = moment().format('LT')[0];
+var isAM = "AM" === currentTime.split(":")[1][3] + currentTime.split(":")[1][4];
+var isPM = "PM" === currentTime.split(":")[1][3] + currentTime.split(":")[1][4];
+var shouldRunFunciton = true;
 
-function getArrays(currentHour){
-    var past = []
-    var future = []
+
+var ids = ["9", "10", "11", "12", "1", "2", "3", "4", "5"];
+
+if (isAM && ( currentHour < 9 || currentHour === 12)) {
+  shouldRunFunciton = false
+  for(i = 0; i < ids.length; i++) {
+    document.getElementById(ids[i]).style.backgroundColor = "green";
+  }
+}
+
+if (isPM && ( currentHour > 5 )) {
+  shouldRunFunciton = false
+  for(i = 0; i < ids.length; i++) {
+    document.getElementById(ids[i]).style.backgroundColor = "gray";
+  }
+}
+
+
+
+
+
+function setCSS(currentHour){
+
     if (currentHour <= 5 && currentHour >= 1){ // if currentHour in between (inclusive) 1 and 5
-        for(i = 8; i <= 12; i++){ // that means 9 - 12 in the past
-          past.push(i);
+        for(i = 9; i <= 12; i++){ // that means 9 - 12 in the past
+          document.getElementById(i).style.backgroundColor = "gray";
         }
           for(j = 1; j <= 5; j++) {
           if(j < currentHour) { // loop through and check the rest
-            past.push(j);
+            document.getElementById(j).style.backgroundColor = "gray";
           } else if (j > currentHour) {
-            future.push(j);
+            document.getElementById(j).style.backgroundColor = "green";
           }
         }
     }
 
     if (currentHour <= 12 && currentHour >= 9) { //if currentHour in between (inclusive) 9 and 12
         for(i = 1; i <= 5; i++){  // that means  1- 5 in the future
-          future.push(i);
+          document.getElementById(i).style.backgroundColor = "green";
         }
-          for(j = 8; j <= 12; j++) { // check the rest
+          for(j = 9; j <= 12; j++) { // check the rest
           if(j < currentHour) {
-            past.push(j);
+            document.getElementById(j).style.backgroundColor = "gray";
           } else if (j > currentHour) {
-            future.push(j);
+            document.getElementById(j).style.backgroundColor = "green";
           }
         }
     }
-    return [past, future];
+    
 }
-var past;
-var future;
-past = getArrays(3)[0];
-future = getArrays(3)[1]
-console.log("past: ", past, "future: ", future, "current hour = 3")
+
+if (shouldRunFunciton) {
+setCSS(currentHour);
+document.getElementById(currentHour).style.backgroundColor = "red";
+
+}
 
 
-past = getArrays(10)[0];
-future = getArrays(10)[1]
-console.log("past: ", past, "future: ", future, "current hour = 10")
+
+
+
 
 
 
