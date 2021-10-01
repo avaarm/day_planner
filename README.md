@@ -1,4 +1,4 @@
-# Work Day Scheduler
+# [Work Day Scheduler](https://avaarm.github.io/day_planner/)
 
 ## Description 
 
