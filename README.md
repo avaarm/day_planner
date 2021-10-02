@@ -2,7 +2,9 @@
 
 ## Description 
 
-This is a frontend Javascript application that utilizes a third-party API called Moment, a time and date library.
+This is a frontend Javascript application that utilizes a third-party API called Moment, a time and date library. Throught this project I learned how to implement jQuery UI to make a webpage more user-friendly and how to use jQuery to perform DOM manipulation and traversals and implement interactivity using event handlers.
+
+
 
 ## Table of Contents
 
